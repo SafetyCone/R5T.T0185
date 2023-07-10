@@ -46,5 +46,17 @@ namespace R5T.T0185.Extensions
         {
             return Instances.StringOperator_Extensions.ToWord(value);
         }
+
+        /// <inheritdoc cref="IStringOperator.ToMajorMinorPatchVersionName(string)"/>
+        public static IMajorMinorPatchVersionName ToMajorMinorPatchVersionName(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToMajorMinorPatchVersionName(value);
+        }
+
+        /// <inheritdoc cref="IStringOperator.ToVersionName(string)"/>
+        public static IVersionName ToVersionName(this string value)
+        {
+            return Instances.StringOperator_Extensions.ToVersionName(value);
+        }
     }
 }

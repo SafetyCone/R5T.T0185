@@ -56,5 +56,19 @@ namespace R5T.T0185.Extensions
             var output = new Word(value);
             return output;
         }
+
+        /// <inheritdoc cref="IMajorMinorPatchVersionName"/>
+        public IMajorMinorPatchVersionName ToMajorMinorPatchVersionName(string value)
+        {
+            var output = new MajorMinorPatchVersionName(value);
+            return output;
+        }
+
+        /// <inheritdoc cref="IVersionName"/>
+        public IVersionName ToVersionName(string value)
+        {
+            var output = new VersionName(value);
+            return output;
+        }
     }
 }
